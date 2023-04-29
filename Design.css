@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Main{
+    width: 100%;
+}
+
+.Main1{
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.589);
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+    border-radius: 70px;
+    position: relative;
+    margin: 0 40px;
+    opacity: 0.8;
+}
+.Main1 h1{
+    color: aliceblue;
+    position: relative;
+    right: 250px;
+}
+.Main1 ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 50px;
+    position: relative;
+    right: 100px;
+}
+.Main1 ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: aliceblue;
+}
+.Main1 ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px; 
+    transition: 0.5s;
+}
+.Main1 ul li:hover::after{
+    width: 100%;
+}
+.f{
+    height: 20px;
+    width: 20px;
+    position: relative;
+    right: 300px;
+}
+.background{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.PNG);
+}
+.background h1{
+    color: aliceblue;
+    align-items: center;
+    position: static;
+    font-size: 75px;
+    transform: translateY(35vh);
+    text-align: center;
+}
+.content{
+    height: 100vh;
+    width: 100%;
+}
+.content1{
+    height: 70vh;
+    width: 50vh;
+    margin: 100px 219px;
+    position: static;
+    background: #fff;
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0,0,0,0.1);
+}
+.content1{
+    box-shadow: -30px 30px 20px rgba(0,0,0,0.3);
+}
+.content1{
+    content: '';
+    position: static;
+    background: rgba(212, 212, 212, 0.3);
+    transform-origin: left;
+    z-index: -1;
+}
+.content1 h1{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    position: relative;
+    bottom: 300px;
+    left: 195px;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.content1 p{
+    color: black;
+    left: -55px;
+    bottom: 30px;
+    font-style: normal;
+    font-size: 23px;
+    position: relative;
+    align-items: center;
+    text-align: justify;
+}
+

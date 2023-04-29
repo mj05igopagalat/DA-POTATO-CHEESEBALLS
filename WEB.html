@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title>DA CHEESE BALLS</title>
+    <link rel="stylesheet" href="Design.css">
+    </head>
+
+    <body>
+        <div class="Main">
+            <div class="Main1">
+                <img src="logo.jpg" class="logo">
+                <h1>DA CHEESEBALLS</h1>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+                <a href="https://www.facebook.com/profile.php?id=100092385693067"><img src="facebook.png" class="f"></a>
+                </div>
+        </div>
+        <div class="background">
+            <h1>DA<br>CHEESEBALLS</h1>
+        </div>
+         <div class="content">
+            <div class="content1">
+                <h1>Potato</h1>
+                <p>The potato is a starchy food native to the Americas and is a perennial in the nightshade family Solanaceae. It was originally believed to have been domesticated by Native Americans in multiple locations, but genetic studies traced a single origin to present-day southern Peru and extreme northwestern Bolivia. It was introduced to Europe by the Spanish in the 16th century and is now a staple food in many parts of the world. It contains the toxin solanine, which is dangerous for human consumption. Green sections of the plant can accumulate a high concentration of glycoalkaloids, which can affect human health.</p>
+            </div>
+            <div class="content1">
+                <h1>Cheese</h1>
+                <p>Cheese is a dairy product produced in a variety of flavors, textures, and forms by coagulation of the milk protein casein. It is valued for its portability, long shelf life, and high content of fat, protein, calcium, and phosphorus. Cheesemakers near a dairy region may benefit from fresher, lower-priced milk and lower shipping costs. Cheese is valued for its portability, long shelf life, and high content of fat, protein, calcium, and phosphorus. Vegetarian alternatives to rennet are available. Cheesemakers near a dairy region may benefit from fresher, lower-priced milk and lower shipping costs.</p>
+            </div>
+        </div>
+        
+        <div class="About">
+
+        </div>
+
+        <script>
+            {
+                const nav = document.querySelector(".Main1");
+                let lastScrollY = window.scrollY;
+
+                window.addEventListener("scroll", () =>{
+                    if (lastScrollY < window.scrollY) {
+                        nav.classList.add("nav--hidden");
+                    } else {
+                        nav. classList.remove("nav--hidden")
+                    }
+
+                    lastScrollY = window.scrollY;
+                });
+            }
+        </script>
+    </body>
+</html>
