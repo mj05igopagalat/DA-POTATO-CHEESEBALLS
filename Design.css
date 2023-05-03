@@ -4,22 +4,25 @@
     margin: 0;
     padding: 0;
 }
-
 .Main{
     width: 100%;
 }
 
-.Main1{
+nav{
     width: 100%;
     margin: auto;
     padding: 0;
+    height: 125px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
     z-index: 1000000;
     flex-direction: row;
-    background-color: rgba(0, 0, 0, 0.589);
+    background-color: rgba(0, 0, 0, 0.438);
+}
+nav .black ul{
+    background-color: black;
 }
 .logo{
     width: 120px;
@@ -29,25 +32,25 @@
     margin: 0 40px;
     opacity: 0.8;
 }
-.Main1 h1{
+nav h1{
     color: aliceblue;
     position: relative;
-    right: 200px;
+    right: 150px;
 }
-.Main1 ul li{
+nav ul li{
     list-style: none;
     display: inline-block;
     margin: 0 50px;
     position: relative;
     right: 100px;
 }
-.Main1 ul li a{
+nav ul li a{
     text-decoration: none;
     text-transform: uppercase;
     color: aliceblue;
     cursor: pointer;
 }
-.Main1 ul li::after{
+nav ul li::after{
     content: '';
     height: 3px;
     width: 0;
@@ -57,13 +60,16 @@
     bottom: -10px; 
     transition: 0.5s;
 }
-.Main1 ul li:hover::after{
+nav ul li:hover::after{
     width: 100%;
 }
-
 .f{
     height: 20px;
     width: 20px;
+    position: relative;
+    right: 200px;
+}
+.I{
     position: relative;
     right: 300px;
 }
@@ -175,4 +181,122 @@
     position: relative;
     top: 100px;
     font-weight: lighter;
+}
+@media (max-width: 400px){
+    .f{
+        position: relative;
+        right: 20px;
+    }
+    .I{
+        position: relative;
+        right: 80px;
+    }
+    nav ul li a{
+        position: relative;
+        left: 50px;
+    }
+    nav h1{
+        right: 20px;
+        position: relative;
+    }
+    .background{
+        width: 146%;
+    }
+    .background h1{
+        display: block;
+        font-size: 45px;
+        position: relative;
+        bottom: 500px;
+    }
+    .content{
+        height: 220vh;
+        width: 146%;
+    }
+    .content1{
+        height: 80vh;
+        width: 50vh;
+        margin: 120px;
+        position: relative;
+        background: #fff;
+        display: flex;
+        float: left;
+        justify-content: center;
+        align-items: center;
+        color: rgba(0, 0, 0, 0.473);
+    }
+    .content1{
+        box-shadow: -30px 30px 20px rgba(0,0,0,0.3);
+    }
+    .content{
+        content: '';
+        position: static;
+        background: rgba(212, 212, 212, 0.3);
+        transform-origin: left;
+        z-index: -1;
+    }
+    .content1 h1{
+        color: rgb(0, 0, 0);
+        font-size: 40px;
+        position: relative;
+        bottom: 300px;
+        left: 115px;
+        align-items: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .content1 p{
+        color: black;
+        left: -60px;
+        top: 10px;
+        font-style: normal;
+        font-size: 18px;
+        position: relative;
+        align-items: center;
+        text-align: justify;
+    }
+    .location{
+        width: 147%;
+        height: 100vh;
+        background-color: rgba(236, 236, 236, 0.575);
+    }
+    .location iframe{
+        width: 97%;
+        height: 500px;
+        left: 7px;
+        position: relative;
+    }
+    .location h2{
+        text-align: center;
+        position: relative;
+    }
+    .location h1{
+        justify-content: center;
+        text-align: center;
+        color: #AD794B ;
+        position: relative;
+        top: 150px;
+        font-size: 50px;
+    }
+    .location p{
+        text-align: center;
+        position: relative;
+        font-family: 'IBM Plex Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        top: 180px;
+    }
+    .End{
+        width: 146%;
+        height: 150px;
+        top: 250px;
+        position: relative;
+        
+        background: rgba(185, 218, 212, 0.425);
+    }
+    .End p{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        top: 100px;
+        font-weight: lighter;
+    }
 }
